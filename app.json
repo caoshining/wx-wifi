@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/wifi/wifi"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一键wifi",
+    "navigationBarTextStyle": "black"
+  }
+}

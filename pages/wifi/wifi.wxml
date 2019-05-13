@@ -1,0 +1,38 @@
+<view class="cont" wx:if="{{startError}}">
+  <view class='error'>
+    <icon type="warn" size="40" />
+    <text>{{startError}}</text>
+  </view>
+  <view class='info'>请尝试手动连接</view>
+  <view class='info'>
+    <text>wifi帐号：</text>
+    <text>{{ssid}}</text>
+  </view>
+  <view class='info'>
+    <text>wifi密码：</text>
+    <text selectable class='pass'>{{pass}}</text>
+  </view>
+</view>
+
+<view wx:if="{{wifiListError}}">
+  <view class='error'>
+    <icon type="warn" size="40" />
+    <text>{{wifiListErrorInfo}}</text>
+  </view>
+  <view class='info'>请尝试手动连接。</view>
+  <view class='info'>
+    <text>wifi帐号:</text>
+    <text>{{ssid}}</text>
+  </view>
+  <view class='info'>
+    <text>wifi密码:</text>
+    <text selectable class='pass'>{{pass}}</text>
+  </view>
+</view>
+
+<view wx:if="{{endError}}">
+  <view class='success'>
+    <icon type="success" size="40" />
+    <text>{{endError}}</text>
+  </view>
+</view>
